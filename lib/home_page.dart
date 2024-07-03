@@ -2,8 +2,10 @@ import 'package:every_flutter_widget/ui/builder.dart';
 import 'package:every_flutter_widget/ui/chip.dart';
 import 'package:every_flutter_widget/ui/closeButton.dart';
 import 'package:every_flutter_widget/ui/constrainedBox.dart';
+import 'package:every_flutter_widget/ui/cupertino%20Context%20Menu/cupertinoconextButton.dart';
 import 'package:every_flutter_widget/ui/cupertinoAction.dart';
 import 'package:every_flutter_widget/ui/cupertinoButton/cupertinobtn.dart';
+import 'package:every_flutter_widget/ui/cupertinoDateTime/cupertinoDatetimeBtn.dart';
 import 'package:every_flutter_widget/ui/cupertinoDialog/cupertinoDialog.dart';
 import 'package:every_flutter_widget/ui/cupertinoactivityindicator/cupertinoactivityindicatorpage.dart';
 import 'package:every_flutter_widget/ui/modal_bottom_sheet.dart';
@@ -21,7 +23,7 @@ class HomePage extends StatelessWidget {
           child: Column(
 
             children: [
-              ElevatedButton(style: ElevatedButton.styleFrom(minimumSize: Size(double.infinity, 40)),onPressed: (){
+              ElevatedButton(style: ElevatedButton.styleFrom(minimumSize: const Size(double.infinity, 40)),onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) => ModalBottomSheetWidget(),));
               }, child: Text('Modal Bottom sheet')),
               ElevatedButton(style: ElevatedButton.styleFrom(minimumSize: Size(double.infinity, 40)),onPressed: (){
@@ -49,6 +51,12 @@ class HomePage extends StatelessWidget {
               ElevatedButton(style: ElevatedButton.styleFrom(minimumSize: Size(double.infinity, 40)),onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) => CupertinoButtonPage(),));
               }, child: Text('Cupertino Button')),
+              ElevatedButton(style: ElevatedButton.styleFrom(minimumSize: Size(double.infinity, 40)),onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => CupertinoContextMenuButtonPage(),));
+              }, child: Text('Cupertino Context Menu')),
+              ElevatedButton(style: ElevatedButton.styleFrom(minimumSize: Size(double.infinity, 40)),onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => CupertinoDateTimeBtn(),));
+              }, child: Text('Cupertino Date Time Picker')),
             ],
           ),
         ),
