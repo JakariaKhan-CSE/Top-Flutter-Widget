@@ -5,7 +5,11 @@ class CupertinoAlertDialogWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CupertinoPageScaffold(child: Center(
+    return CupertinoPageScaffold(
+        navigationBar: CupertinoNavigationBar(
+
+        ),
+        child: Center(
       child: CupertinoButton(
         onPressed: (){
 showCupertinoDialog(context: context, builder: (context) => CupertinoAlertDialog(

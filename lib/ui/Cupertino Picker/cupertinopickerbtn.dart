@@ -62,6 +62,9 @@ class _CupertinoPickerWidgetState extends State<CupertinoPickerWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

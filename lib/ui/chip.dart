@@ -7,6 +7,9 @@ class ChipWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+
+      ),
       body: Center(
         child: Chip(
           label: Text('This is a Flutter chip'),

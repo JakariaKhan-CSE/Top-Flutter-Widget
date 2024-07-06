@@ -6,6 +6,9 @@ class CupertinoActionWidgetCodeShow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+
+      ),
       body: Center(
         child: Container(
           margin: EdgeInsets.all(12),

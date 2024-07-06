@@ -14,6 +14,9 @@ class _CupertinoPickerWidgetState extends State<CupertinoPickerWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+
+      ),
       body: SafeArea(
         child: Center(
           child: CupertinoButton.filled(

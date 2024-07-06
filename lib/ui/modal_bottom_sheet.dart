@@ -6,6 +6,9 @@ class ModalBottomSheetWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+
+      ),
       body: Center(
         child: ElevatedButton(onPressed: (){
 showModalBottomSheet(context: context, builder: (context) {

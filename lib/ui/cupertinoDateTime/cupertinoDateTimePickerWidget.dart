@@ -15,6 +15,9 @@ class _CupertinodatetimepickerwidgetState extends State<Cupertinodatetimepickerw
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
+      navigationBar: CupertinoNavigationBar(
+
+      ),
       backgroundColor: Colors.blue.withOpacity(0.3),
         child: Center(
           child: CupertinoButton(

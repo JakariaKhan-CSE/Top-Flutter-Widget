@@ -7,6 +7,9 @@ class CupertinoPageRouteWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+
+      ),
       body: Center(
         child: CupertinoButton.filled(
             child: Text('Click for page 2'),
