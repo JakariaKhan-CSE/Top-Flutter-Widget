@@ -18,7 +18,7 @@ class _CupertinodatetimepickerwidgetState extends State<Cupertinodatetimepickerw
       backgroundColor: Colors.blue.withOpacity(0.3),
         child: Center(
           child: CupertinoButton(
-            child: Text('${dateTime.month} - ${dateTime.day} - ${dateTime.year}',style: TextStyle(color: Colors.white),),
+            child: Text('${dateTime.month} - ${dateTime.day} - ${dateTime.year}        ${dateTime.hour} : ${dateTime.minute}',style: TextStyle(color: Colors.white),),
             onPressed: (){
 showCupertinoModalPopup(
     context: context,

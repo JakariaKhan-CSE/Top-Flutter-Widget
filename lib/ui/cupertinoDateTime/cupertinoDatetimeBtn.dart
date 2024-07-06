@@ -65,7 +65,7 @@ showCupertinoModalPopup(
               Navigator.push(context, MaterialPageRoute(builder: (context) => Cupertinodatetimepickerwidget(),));
             }, child: Text('Widget show')),
             TextButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => CodeShow(code: code, name: 'Cupertino Context Menu',),));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => CodeShow(code: code, name: 'Cupertino Date Time Picker',),));
             }, child: Text('Code show')),
           ],
         ),
