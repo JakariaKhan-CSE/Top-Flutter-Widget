@@ -3,6 +3,7 @@ import 'package:every_flutter_widget/ui/Reorderable%20List%20View/btn.dart';
 import 'package:every_flutter_widget/ui/interactive%20viewer/interactiveViewBtn.dart';
 import 'package:every_flutter_widget/ui/material%20banner/materialbannerbtn.dart';
 import 'package:every_flutter_widget/ui/preferred%20Size/preferredSizeBtn.dart';
+import 'package:every_flutter_widget/ui/table/btn.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -80,6 +81,18 @@ class HomePage extends StatelessWidget {
                           ));
                     },
                     child: Text('5. Reorderable List View')),
+                SizedBox(height: 10,),
+                ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(double.infinity, 40)),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => TableBtn(),
+                          ));
+                    },
+                    child: Text('6. Table')),
               ],
             ),
           ),
