@@ -2,6 +2,7 @@ import 'package:every_flutter_widget/ui/Animated%20Cross%20Fade/btn.dart';
 import 'package:every_flutter_widget/ui/Drag%20Target/btn.dart';
 import 'package:every_flutter_widget/ui/Draggable%20Scrollable%20Sheet/btn.dart';
 import 'package:every_flutter_widget/ui/Long%20Press%20Draggable/LongPressDraggableBtn.dart';
+import 'package:every_flutter_widget/ui/Pop%20Up%20Menu/btn.dart';
 import 'package:every_flutter_widget/ui/Reorderable%20List%20View/btn.dart';
 import 'package:every_flutter_widget/ui/alert%20dialog/btn.dart';
 import 'package:every_flutter_widget/ui/interactive%20viewer/interactiveViewBtn.dart';
@@ -145,6 +146,18 @@ class HomePage extends StatelessWidget {
                           ));
                     },
                     child: Text('10. Animated Cross Faed')),
+                SizedBox(height: 10,),
+                ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(double.infinity, 40)),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => PopUpMenuBtn(),
+                          ));
+                    },
+                    child: Text('11. Pop up Menu Button')),
               ],
             ),
           ),
