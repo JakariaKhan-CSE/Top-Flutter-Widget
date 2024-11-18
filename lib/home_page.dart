@@ -1,4 +1,5 @@
 import 'package:every_flutter_widget/ui/Animated%20Cross%20Fade/btn.dart';
+import 'package:every_flutter_widget/ui/AnimatedDefaultTextStyle/btn.dart';
 import 'package:every_flutter_widget/ui/Drag%20Target/btn.dart';
 import 'package:every_flutter_widget/ui/Draggable%20Scrollable%20Sheet/btn.dart';
 import 'package:every_flutter_widget/ui/Long%20Press%20Draggable/LongPressDraggableBtn.dart';
@@ -158,6 +159,18 @@ class HomePage extends StatelessWidget {
                           ));
                     },
                     child: Text('11. Pop up Menu Button')),
+                SizedBox(height: 10,),
+                ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(double.infinity, 40)),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => AnimatedDefaultTextStyleBtn(),
+                          ));
+                    },
+                    child: Text('12. Animated Default TextStyle')),
               ],
             ),
           ),
